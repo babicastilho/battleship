@@ -1,13 +1,94 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from "./App";
+import "./styles.css";
+
+const Square = (props) => <div className="square" />;
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+        </div>
+        <br />
+        <div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+          <div className="row">
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+            <Square />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+ReactDOM.render(<App />, rootElement);
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
