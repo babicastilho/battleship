@@ -1,94 +1,27 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { WelcomeScreen } from './WelcomeScreen';
+import { Game } from './Game/Game.js';
+import { Header } from './Header';
+import { Footer } from './footer';
 
-import "./styles.css";
+import './css/style.css';
 
-const Square = (props) => <div className="square" />;
+export const App = () => {
+  const [appState, setAppState] = useState('welcome'); // play or welcome
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-        </div>
-        <br />
-        <div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="row">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+  const startPlay = () => {
+    setAppState('play');
+  };
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+  // Renders either Welcome Screen or Game
+  return (
+    <React.Fragment>
+      <Header />
+      {appState === 'play' ? <Game /> : <WelcomeScreen startPlay={startPlay} />}
+      <Footer />
+    </React.Fragment>
+  );
+};
 
+ReactDOM.render(<App />, document.getElementById('root'));
