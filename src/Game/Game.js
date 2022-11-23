@@ -4,8 +4,8 @@ const Square = (props) => <div className="square" />;
 
 export const Game = () => {
   return (
-    <div>
-        <div>
+    <div className="container">
+        <div className="left">
           <div className="row">
             <Square />
             <Square />
@@ -42,8 +42,8 @@ export const Game = () => {
             <Square />
           </div>
         </div>
-        <br />
-        <div>
+        
+        <div className="right">
           <div className="row">
             <Square />
             <Square />
