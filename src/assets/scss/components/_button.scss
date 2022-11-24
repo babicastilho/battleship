@@ -1,0 +1,27 @@
+.btn {
+  width: 120px;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+
+.btn:active {
+  background-color: var(--primary);
+}
+
+.btn:hover {background-color: var(--accent-color);}
+
+.btn:focus {
+  outline: none;
+}

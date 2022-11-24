@@ -1,0 +1,29 @@
+.welcome {
+
+
+    .start-page{
+        margin: 15% auto 5%;
+
+        & .heading {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height:14px;
+            text-align: center;
+            color: var(--accent-color);
+          }
+
+        & .description {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #aaa;
+          }
+      }
+
+}
+

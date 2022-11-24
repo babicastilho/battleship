@@ -1,21 +1,14 @@
 import React from 'react';
-import Square from '../Square/Square';
-import './style.css';
+import Square from './Square';
 
 export default class Field extends React.Component {
-  // squares = [];
 
-  // squaresArrange() {
-  //   for (let i = 0; i < 25; i++) {
-  //     this.squares.push(<Square key={i} />)
-  //   }
-  // }
 
   render() {
-    // this.squaresArrange()
+
     return (
-      <div className='field-wrapper'>
-        {/* {[...this.squares]} */}
+      <div className='board-wrapper'>
+        {}
         <div>
           <Square />
           <Square />
