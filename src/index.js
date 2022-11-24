@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { WelcomeScreen } from './WelcomeScreen';
+import { WelcomeScreen } from './Pages/WelcomeScreen';
 import { Game } from './Game/Game.js';
 import { Header } from './Header';
 import { Footer } from './footer';
 
-import './css/style.css';
+import './style.css';
 
 export const App = () => {
   const [appState, setAppState] = useState('welcome'); // play or welcome
