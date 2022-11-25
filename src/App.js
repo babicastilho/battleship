@@ -37,7 +37,7 @@ export default class App extends React.Component {
                     this.state.pageSwitch === 1 ?
                         <WelcomePage
                         heading='Simplified naval combat'
-                        description='A first hometask React game'
+                        description='A first (and no functional yet =/) hometask React game'
                         image='⚓️'
                         /> :
                     this.state.pageSwitch === 0 ?
