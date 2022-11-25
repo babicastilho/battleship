@@ -1,10 +1,9 @@
-.board-wrapper {
+.board {
 
-    width: calc (60px * 5);
-    height: calc (60px * 5);
     display: flex;
     flex-wrap: wrap;
+    margin: 0 1em;
     gap: 0;
     border: 1px solid var(--gray-9); 
-    
+
 }

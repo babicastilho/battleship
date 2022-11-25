@@ -1,5 +1,8 @@
 .game {
 
+    display: block;
+    width: 100%;
+    
     & .wrapper {
         margin: 2em;
         display: flex;
@@ -16,5 +19,25 @@
         line-height:14px;
         text-align: center;
         color: var(--accent-color);
-    }     
+    }    
+    
+    & .content {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .left,
+        & .right {
+
+            & h3 {
+
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                color: var(--secondary);
+                text-transform: uppercase;
+            }
+        }
+
+    }
 }

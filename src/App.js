@@ -46,8 +46,8 @@ export default class App extends React.Component {
                         <ArrangementPage player='2' /> :
                         this.state.pageSwitch === -2 ?
                         <WelcomePage
-                            heading='Are you ready?'
-                            description='If you are ready click "play" button'
+                            heading='All ships are in formation.'
+                            description='If you are ready just click "start" button'
                         /> :
                         <GamePage />
                 }
@@ -64,7 +64,7 @@ export default class App extends React.Component {
                             this.state.pageSwitch === -1 ?
                                 'Done' :
                                 this.state.pageSwitch === -2 ?
-                                'Play' :
+                                'Start' :
                                 'Restart'
                         }
                     />
